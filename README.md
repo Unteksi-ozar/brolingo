@@ -2,7 +2,7 @@
 
 **https://github.com/freshcakewtf/brolingo**
 
-A satirical dictionary and survival guide for corporate buzzwords — modeled after Duolingo but for the language of business nonsense.
+A satirical dictionary and survival guide for corporate buzzwords. It's the language of business nonsense.
 
 ## What is this?
 
@@ -18,7 +18,13 @@ Brolingo documents the crimes committed against the English language in conferen
 
 ## Usage
 
-Just open `index.html` in a browser. No build step, no dependencies, no npm install.
+Just go to `brolingo.xyz` in your favorite browser.
+
+Or be super nerdy and open `index.html` in that same browser. No build step, no dependencies, no npm install.
+
+idk why you would do this though. Feels like a pain in the ass when the site url works just fine.
+
+...anyway
 
 ```
 open index.html
