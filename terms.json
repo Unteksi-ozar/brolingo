@@ -6,6 +6,19 @@
   },
   "terms": [
     {
+      "id": 39,
+      "term": "10,000-Foot View",
+      "pronunciation": "ten-THOU-zund-fut VYOO",
+      "part_of_speech": "noun phrase (aviation metaphor for people who don't fly)",
+      "category": "Strategy",
+      "severity": "mild",
+      "corporate_definition": "A broad, high-level perspective of a situation, deliberately stripped of details, nuance, or anything that might require actual knowledge.",
+      "real_definition": "Looking at the big picture. 'Let's take a 10,000-foot view' is how you say 'I would like to stop talking about specifics now.' At 10,000 feet, all problems look like someone else's problems.",
+      "example": "\"Before we get into the weeds, let's take a 10,000-foot view.\" — We will remain at altitude for the duration of this meeting. The weeds will wait.",
+      "also_see": ["Blue Sky Thinking", "North Star", "Granular"],
+      "brolingo_tip": "At 10,000 feet, deadlines look like suggestions and accountability is obscured by cloud cover."
+    },
+    {
       "id": 1,
       "term": "Action Items",
       "pronunciation": "AK-shun EYE-temz",
@@ -162,6 +175,19 @@
       "brolingo_tip": "If you have to say you're disruptive, you are not disruptive. Disruption doesn't announce itself at a conference."
     },
     {
+      "id": 40,
+      "term": "Double Click",
+      "pronunciation": "DUB-ul klik",
+      "part_of_speech": "verb phrase (stolen from mouse operation)",
+      "category": "Meetings",
+      "severity": "moderate",
+      "corporate_definition": "To examine an idea more closely by exploring its component details — typically deployed mid-meeting on a slide that was not designed for this level of scrutiny.",
+      "real_definition": "To zoom in. To ask a follow-up question, but with the confidence of someone who owns a standing desk. Borrowed from the literal act of double-clicking to open a file. Now used to mean: 'open this concept and show me what's inside, slowly, in front of everyone.'",
+      "example": "\"I want to double click on the retention numbers for a second.\" — We will spend the next 25 minutes on this slide. The rest of the agenda is a suggestion now.",
+      "also_see": ["Deep Dive", "Granular", "Take Offline"],
+      "brolingo_tip": "A single click selects. A double click opens. A corporate double click opens a 45-minute discussion that may or may not close."
+    },
+    {
       "id": 13,
       "term": "Ecosystem",
       "pronunciation": "EE-koh-sis-tem",
@@ -173,6 +199,19 @@
       "example": "\"Our ecosystem of solutions enables end-to-end transformation.\" — Three tools. Two of them break when you update the third.",
       "also_see": ["Synergy", "Robust", "Scale"],
       "brolingo_tip": "Real ecosystems have biodiversity. Corporate ecosystems have vendor lock-in."
+    },
+    {
+      "id": 41,
+      "term": "Flywheel",
+      "pronunciation": "FLY-weel",
+      "part_of_speech": "noun (stolen from mechanical engineering)",
+      "category": "Strategy",
+      "severity": "severe",
+      "corporate_definition": "A self-reinforcing cycle in which early momentum compounds into exponential, unstoppable, paradigm-shifting growth — described confidently by someone who has not yet started the flywheel.",
+      "real_definition": "Things are going well. Or they should be going well. Or someone read 'Good to Great' on a plane and never fully recovered. The flywheel is momentum without a named source. Someone has to push it first. That someone is you. You are the flywheel.",
+      "example": "\"Once we get the flywheel spinning, growth becomes self-sustaining.\" — The flywheel is not spinning. You will push it manually for the next three quarters while someone draws a diagram of it spinning.",
+      "also_see": ["Synergy", "Scale", "North Star"],
+      "brolingo_tip": "In mechanical engineering, flywheels store rotational energy. In business decks, they store optimism and Series A expectations."
     },
     {
       "id": 14,
