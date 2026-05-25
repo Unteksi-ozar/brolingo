@@ -537,6 +537,19 @@
       "example": "\"We're targeting three key verticals: healthcare, finance, and logistics.\" — The product is the same for all three. The sales decks have different stock photos.",
       "also_see": ["Ecosystem", "Scale", "North Star"],
       "brolingo_tip": "Verticals go up and down. Markets go in every direction. Semantics still matter, even if only barely."
+    },
+    {
+      "id": 42,
+      "term": "Professionally",
+      "pronunciation": "pruh-FESH-uh-nuh-lee",
+      "part_of_speech": "adverb",
+      "category": "Communication",
+      "severity": "moderate",
+      "corporate_definition": "In a competent, respectful, and business-appropriate manner consistent with workplace expectations and organizational standards.",
+      "real_definition": "Doing something while suppressing every natural human reaction you had to it. 'Professionally' usually means calm on the outside, composing an unhinged reply in drafts on the inside.",
+      "example": "\"Please handle this professionally.\" — Please do not say what everyone else is already saying privately in Slack.",
+      "also_see": ["Take Offline", "Alignment"],
+      "brolingo_tip": "The more urgently someone requests professionalism, the less professional the situation already is."
     }
   ]
 }
