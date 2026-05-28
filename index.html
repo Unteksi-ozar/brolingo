@@ -441,6 +441,27 @@
     }
     .modal-close:hover { background: var(--red); color: var(--white); border-color: var(--red); }
 
+    .modal-share {
+      position: absolute;
+      top: 16px;
+      right: 60px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      background: var(--bg);
+      cursor: pointer;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--mid);
+      transition: all 0.15s;
+      line-height: 1;
+    }
+    .modal-share:hover { background: var(--blue); color: var(--white); border-color: var(--blue); }
+    .modal-share.copied { background: var(--green); color: var(--white); border-color: var(--green-d); }
+
     .modal-header {
       padding: 28px 28px 20px;
       border-bottom: 2px solid var(--border);
@@ -779,6 +800,8 @@
       document.querySelector('.hero-badges span').textContent =
         `${allTerms.length} Terms Documented`;
       render();
+      const hashMatch = location.hash.match(/^#term-(\d+)$/);
+      if (hashMatch) openModal(parseInt(hashMatch[1]));
     } catch(e) {
       document.getElementById('termGrid').innerHTML =
         '<div class="empty-state"><div class="owl">😅</div><h3>Could not load terms.json</h3><p>Make sure the file is in the same directory as index.html.</p></div>';
@@ -877,6 +900,7 @@
     overlay.className = 'modal-overlay';
     overlay.innerHTML = `
       <div class="modal" role="dialog" aria-modal="true" aria-label="${t.term}">
+        <button class="modal-share" aria-label="Copy link to ${t.term}">🔗</button>
         <button class="modal-close" aria-label="Close">✕</button>
         <div class="modal-header">
           <div class="modal-meta">
@@ -886,7 +910,7 @@
               <span class="severity-dot"></span>
             </div>
           </div>
-          <div class="modal-term">${t.term}</div>
+          <div class="modal-term" style="padding-right:88px">${t.term}</div>
           <div class="modal-pronunciation">${t.pronunciation}</div>
           <div class="modal-pos">${t.part_of_speech}</div>
         </div>
@@ -916,11 +940,13 @@
         </div>
       </div>`;
 
+    overlay.querySelector('.modal-share').addEventListener('click', () => shareModal(t.id));
     overlay.querySelector('.modal-close').addEventListener('click', closeModal);
     overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
     document.addEventListener('keydown', handleModalKey);
     document.body.appendChild(overlay);
     document.body.classList.add('modal-open');
+    history.replaceState(null, '', '#term-' + t.id);
     overlay.querySelector('.modal').focus?.();
   }
 
@@ -928,6 +954,20 @@
     const overlay = document.querySelector('.modal-overlay');
     if (overlay) { overlay.remove(); document.body.classList.remove('modal-open'); }
     document.removeEventListener('keydown', handleModalKey);
+    history.replaceState(null, '', location.pathname + location.search);
+  }
+
+  function shareModal(id) {
+    const url = location.origin + location.pathname + '#term-' + id;
+    const btn = document.querySelector('.modal-share');
+    navigator.clipboard.writeText(url).then(() => {
+      if (!btn) return;
+      btn.classList.add('copied');
+      btn.innerHTML = '✓';
+      setTimeout(() => { btn.classList.remove('copied'); btn.innerHTML = '🔗'; }, 2000);
+    }).catch(() => {
+      prompt('Copy this link to share:', url);
+    });
   }
 
   function handleModalKey(e) {

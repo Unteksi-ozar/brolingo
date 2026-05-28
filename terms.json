@@ -550,6 +550,84 @@
       "example": "\"Please handle this professionally.\" — Please do not say what everyone else is already saying privately in Slack.",
       "also_see": ["Take Offline", "Alignment"],
       "brolingo_tip": "The more urgently someone requests professionalism, the less professional the situation already is."
+    },
+    {
+      "id": 43,
+      "term": "Transform",
+      "pronunciation": "trans-FORM",
+      "part_of_speech": "verb (applied to everything)",
+      "category": "Strategy",
+      "severity": "severe",
+      "corporate_definition": "A complete reimagining of a business, product, or process — typically used to describe any change larger than a font update.",
+      "real_definition": "Change. The word is change. 'Transform' implies a caterpillar-to-butterfly situation. What you're describing is more of a caterpillar-to-slightly-different-caterpillar situation. But 'transform' sounds like the future, and 'change' sounds like admitting the past was wrong. So here we are.",
+      "example": "\"We're transforming the way our customers experience support.\" — They added a chatbot. The chatbot does not work.",
+      "also_see": ["Elevate", "Leverage", "Paradigm Shift"],
+      "brolingo_tip": "Every transformation deck has a slide with a butterfly on it. The butterfly is not included in the budget."
+    },
+    {
+      "id": 44,
+      "term": "Elevate",
+      "pronunciation": "EL-uh-vayt",
+      "part_of_speech": "verb (aspirational)",
+      "category": "Strategy",
+      "severity": "moderate",
+      "corporate_definition": "To raise something to a higher level — typically the conversation, the brand, the experience, or the team's output.",
+      "real_definition": "To improve. But 'elevate' implies you're floating upward, which sounds better than 'fix the thing that's bad.' 'Elevate the conversation' means the current conversation is bad. 'Elevate the brand' means the current brand is bad. 'Elevate your game' means you specifically are the problem. All of these things have simpler words. None of them require a ladder.",
+      "example": "\"We need to elevate our storytelling around this product.\" — The product needs a better pitch. Possibly also a better product.",
+      "also_see": ["Transform", "Leverage", "Value Add"],
+      "brolingo_tip": "When someone says 'elevate,' ask where the ceiling is. Nobody ever specifies the ceiling."
+    },
+    {
+      "id": 45,
+      "term": "Shipped",
+      "pronunciation": "shipt",
+      "part_of_speech": "verb (past tense, loosely)",
+      "category": "Tech",
+      "severity": "moderate",
+      "corporate_definition": "The act of releasing a product, feature, or fix to users — used interchangeably whether it is complete, mostly complete, or actively on fire.",
+      "real_definition": "'We shipped it' means it left the building. What condition it was in when it left — and what condition users find it in — are separate and often very different conversations. In modern software, 'shipped' is less a finish line and more a philosophical position: we have decided to let people encounter this now. Changes may continue. They probably will.",
+      "example": "\"We shipped the new onboarding flow last night.\" — Three engineers are currently awake monitoring it.",
+      "also_see": ["Agile", "Deliverable", "Robust"],
+      "brolingo_tip": "Ships also sink. Just saying."
+    },
+    {
+      "id": 46,
+      "term": "Testing",
+      "pronunciation": "TEST-ing",
+      "part_of_speech": "noun / gerund / alibi",
+      "category": "Tech",
+      "severity": "mild",
+      "corporate_definition": "A formal process of validating software behavior against expected outcomes prior to release.",
+      "real_definition": "Someone clicking the button to see if anything explodes. Often the last step, rarely given enough time, and frequently assigned to whoever looked up from their screen at the wrong moment. Also the word used when your buddy submits something through your contact form to see if it works. That is called 'manual QA' now. He can put it on his LinkedIn.",
+      "example": "\"Did this go through testing?\" — It went through someone's browser on their lunch break. The form submitted. That counts.",
+      "also_see": ["Agile", "Shipped", "Robust"],
+      "brolingo_tip": "Software testing exists on a spectrum from 'I clicked it once and it worked' to 'automated test suite covering 94% of edge cases.' Most shipped software is closer to the left side than anyone will admit in the post-mortem."
+    },
+    {
+      "id": 48,
+      "term": "Vibe Coding",
+      "pronunciation": "vyb KOH-ding",
+      "part_of_speech": "noun / development philosophy / confession",
+      "category": "Tech",
+      "severity": "mild",
+      "corporate_definition": "A software development approach in which the programmer, or anyone with $20 and wifi, describes their intent to an AI model, accepts the output, and ships before fully reading it.",
+      "real_definition": "Writing code by articulating vibes rather than syntax. You describe what you want — in plain English, with gestures if needed — and an AI produces something that works. The developer's role shifts from writing code to reviewing it, nudging it, and occasionally saying 'no, more like this.' Coined by Andrej Karpathy. Immediately embraced by everyone who ever wanted to build something but found semicolons unreasonably stressful.",
+      "example": "\"I vibe coded the whole thing in a weekend.\" — This is either impressive or alarming, depending entirely on whether it's in production.",
+      "also_see": ["Shipped", "Testing", "Robust"],
+      "brolingo_tip": "Full disclosure: this website — a satirical dictionary mocking tech and corporate buzzwords — was itself built via vibe coding. Just look at all these dashes. We find this extremely funny. The owl has no notes."
+    },
+    {
+      "id": 47,
+      "term": "Flush Out",
+      "pronunciation": "flush owt",
+      "part_of_speech": "verb phrase (wrong one)",
+      "category": "Communication",
+      "severity": "critical",
+      "corporate_definition": "To fully develop or expand upon a plan, idea, or strategy. [Note: this is not a real phrase. The expression you want is 'flesh out.']",
+      "real_definition": "The intended meaning is 'flesh out' — to add substance to something, as in putting flesh on a skeleton. 'Flush out' means to drive something from hiding using force, like flushing a bird from tall grass or clearing a drain. Both are, admittedly, unpleasant mental images. But only one of them applies to a strategic plan. The other turns your roadmap into a plumbing emergency. Choose your gross metaphor carefully.",
+      "example": "\"We need to flush out the strategy before the board meeting.\" — The strategy will now be expelled from concealment by a surge of pressurized water. Or — and this is the move — you could flesh it out. Your call.",
+      "also_see": ["Action Items", "Deliverable", "Alignment"],
+      "brolingo_tip": "Flesh out: add meat to bones (gross). Flush out: expel with force (also gross). One is correct here. The other is what you do to a clogged pipe. Neither phrase is pleasant, and yet here we are using both of them in a professional setting."
     }
   ]
 }
