@@ -94,6 +94,22 @@
       letter-spacing: -0.5px;
     }
     .logo-text span { color: var(--dark); }
+    .nav-link {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--mid);
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 2px solid var(--border);
+      transition: all 0.15s;
+    }
+    .nav-link:hover { border-color: var(--green); color: var(--green); }
+    .nav-link.active {
+      background: var(--green);
+      border-color: var(--green);
+      color: var(--white);
+    }
     /* ── HERO ── */
     .hero {
       background: linear-gradient(135deg, var(--green) 0%, #3dab00 100%);
@@ -699,6 +715,10 @@
       <span class="logo-owl">🦉</span>
       <span class="logo-text">Bro<span>lingo</span></span>
     </a>
+    <nav style="display:flex;gap:8px;">
+      <a href="index.html" class="nav-link active">Dictionary</a>
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
   </div>
 </header>
 

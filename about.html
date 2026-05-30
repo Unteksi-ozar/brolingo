@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Brolingo</title>
+  <meta name="description" content="Learn about Brolingo, the AI-forward, agentically aligned lexicographic platform redefining corporate vocabulary intelligence." />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="About — Brolingo" />
+  <meta property="og:description" content="Learn about Brolingo, the AI-forward, agentically aligned lexicographic platform redefining corporate vocabulary intelligence." />
+  <meta property="og:image"       content="og-image.svg" />
+  <meta property="og:site_name"   content="Brolingo" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:   #58CC02;
+      --green-d: #46a302;
+      --green-bg:#e8ffd1;
+      --yellow:  #FFC800;
+      --red:     #FF4B4B;
+      --orange:  #FF9600;
+      --blue:    #1CB0F6;
+      --purple:  #CE82FF;
+      --dark:    #1F1F1F;
+      --mid:     #4B4B4B;
+      --muted:   #777;
+      --border:  #E5E5E5;
+      --bg:      #F7F7F7;
+      --white:   #FFFFFF;
+      --card-r:  16px;
+      --shadow:  0 4px 0 rgba(0,0,0,0.12);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--white);
+      border-bottom: 3px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .logo-owl {
+      font-size: 32px;
+      line-height: 1;
+      filter: drop-shadow(0 2px 0 rgba(0,0,0,0.15));
+    }
+    .logo-text {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--green);
+      letter-spacing: -0.5px;
+    }
+    .logo-text span { color: var(--dark); }
+    .nav-link {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--mid);
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 2px solid var(--border);
+      transition: all 0.15s;
+    }
+    .nav-link:hover { border-color: var(--green); color: var(--green); }
+    .nav-link.active {
+      background: var(--green);
+      border-color: var(--green);
+      color: var(--white);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--dark) 0%, #2d2d2d 100%);
+      padding: 56px 24px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-owl {
+      font-size: 80px;
+      line-height: 1;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+      display: inline-block;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-8px); }
+    }
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .hero h1 em {
+      color: var(--green);
+      font-style: normal;
+    }
+    .hero p {
+      font-size: clamp(15px, 2.5vw, 18px);
+      color: rgba(255,255,255,0.7);
+      max-width: 600px;
+      margin: 0 auto;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    /* ── CONTENT ── */
+    .content {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .section {
+      background: var(--white);
+      border: 2px solid var(--border);
+      border-radius: var(--card-r);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .section-header {
+      padding: 20px 28px 16px;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-icon {
+      font-size: 28px;
+      line-height: 1;
+    }
+    .section-title {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+    }
+    .section-heading {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--dark);
+      margin-top: 2px;
+    }
+    .section-body {
+      padding: 24px 28px;
+    }
+    .section-body p {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.75;
+      color: var(--mid);
+      margin-bottom: 16px;
+    }
+    .section-body p:last-child { margin-bottom: 0; }
+    .section-body strong {
+      color: var(--dark);
+      font-weight: 800;
+    }
+
+    /* highlight callout */
+    .callout {
+      background: var(--green-bg);
+      border: 2px solid var(--green);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    .callout-label {
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--green-d);
+      margin-bottom: 4px;
+    }
+
+    /* VC section accent */
+    .section.vc-section { border-color: var(--yellow); }
+    .section.vc-section .section-header { background: #fffbea; }
+
+    /* metrics */
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 16px;
+      margin-top: 4px;
+    }
+    .metric {
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+    }
+    .metric-value {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--green);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .metric-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.8;
+    }
+    footer a {
+      color: var(--green);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    footer a:hover { text-decoration: underline; }
+    footer .footer-logo {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 8px;
+      display: block;
+    }
+    footer .footer-owl { font-size: 28px; display: block; margin-bottom: 8px; }
+
+    @media (max-width: 600px) {
+      .hero { padding: 40px 20px 36px; }
+      .section-body, .section-header { padding-left: 20px; padding-right: 20px; }
+      .metrics { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-owl">🦉</span>
+      <span class="logo-text">Bro<span>lingo</span></span>
+    </a>
+    <nav style="display:flex;gap:8px;">
+      <a href="index.html" class="nav-link">Dictionary</a>
+      <a href="about.html" class="nav-link active">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-owl">🦉</div>
+  <h1>Aligned to <em>Transparency.</em><br>Committed to <em>Clarity.</em></h1>
+  <p>A high-level overview of our mission, vision, and the robust value proposition we are currently socialising with the market.</p>
+</section>
+
+<main class="content">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🚀</span>
+      <div>
+        <div class="section-title">Mission &amp; Vision</div>
+        <div class="section-heading">What We Do (At Scale)</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>
+        Brolingo is an <strong>AI-forward, agentically aligned lexicographic platform</strong> delivering next-generation corporate vocabulary intelligence to a global community of knowledge workers, individual contributors, and professional humans operating within enterprise ecosystems.
+      </p>
+      <p>
+        We leverage cutting-edge dictionary technology to surface <strong>key learnings</strong> from an innovative, localized talent community spanning multiple time zones, verticals, and Slack workspaces. Our core competency is helping you understand what people are saying in meetings when they are not, technically, saying anything.
+      </p>
+      <div class="callout">
+        <div class="callout-label">Official Position Statement</div>
+        We don't just define words. We ideate around linguistic paradigm shifts, productize semantic insights, and circle back on terminology that has long since lost all meaning.
+      </div>
+      <p>
+        At its heart, Brolingo exists because someone in a meeting said "let's double-click on the learnings from our synergy-driven flywheel" and we needed somewhere to process that.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📊</span>
+      <div>
+        <div class="section-title">Data &amp; Impact</div>
+        <div class="section-heading">Key Metrics (Selected)</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>We are data-driven. We have data. The data suggests that most corporate buzzwords entered active circulation between 2012 and 2023 and have caused measurable harm to a significant percentage of standup attendees.</p>
+      <div class="metrics">
+        <div class="metric">
+          <div class="metric-value">51+</div>
+          <div class="metric-label">Terms Documented</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">0</div>
+          <div class="metric-label">Synergies Created</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">∞</div>
+          <div class="metric-label">Reorgs Survived</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">100%</div>
+          <div class="metric-label">Meetings That Could Have Been Emails</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🌍</span>
+      <div>
+        <div class="section-title">Team &amp; Culture</div>
+        <div class="section-heading">Our People (Headcount TBD)</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>
+        Brolingo is powered by a <strong>lean, agile, cross-functional team</strong> of passionate stakeholders operating at the intersection of satire and mild workplace trauma. We are remote-first (extremely remote), asynchronously aligned (no meetings), and fully committed to our north star (making fun of the meetings we no longer attend).
+      </p>
+      <p>
+        Our talent density is high. Our org chart is flat. Our headcount is not something we're disclosing at this stage of the journey, but we can confirm it rhymes with "fun."
+      </p>
+      <p>
+        We believe in psychological safety, radical candour, and bringing your whole self to work, provided your whole self has reviewed the Brolingo glossary and knows what a deliverable is.
+      </p>
+    </div>
+  </div>
+
+  <div class="section vc-section">
+    <div class="section-header">
+      <span class="section-icon">💰</span>
+      <div>
+        <div class="section-title">Investor Relations</div>
+        <div class="section-heading">A Note to Our Stakeholders</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>
+        Brolingo is <strong>ideally positioned to disrupt the $47 billion corporate communication space.</strong> We sit at a unique inflection point in the market, where AI-driven linguistic commoditisation meets an underserved community of professionals who have been nodding through jargon for a decade and would like it to stop.
+      </p>
+      <p>
+        We are pre-revenue, post-idea, and currently exploring strategic partnerships with any VC who has recently used the phrase <strong>"hockey stick growth"</strong> without irony. We have a robust go-to-market strategy that we are actively socialising. Our runway is a conversation we're excited to have.
+      </p>
+      <div class="callout">
+        <div class="callout-label">Call to Action</div>
+        If you'd like to explore synergies, please reach out. We will circle back within one to three business paradigm shifts. Decks available upon alignment.
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📖</span>
+      <div>
+        <div class="section-title">Contributing</div>
+        <div class="section-heading">Join the Ecosystem</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <p>
+        Brolingo is an open-source, community-powered initiative. If you've heard something unspeakable in a quarterly business review and would like it documented for posterity, we welcome your contributions via <a href="https://github.com/freshcakewtf/brolingo" target="_blank" rel="noopener noreferrer" style="color:var(--green);font-weight:800;">GitHub</a>.
+      </p>
+      <p>
+        All submissions are reviewed for buzzword authenticity, comedic potential, and general damage to the English language. We have high standards. We call them <strong>non-negotiables</strong>.
+      </p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <span class="footer-owl">🦉</span>
+  <span class="footer-logo">Brolingo</span>
+  A satirical project. No synergies were created in the making of this site.<br/>
+  Built with ✨ and genuine workplace trauma.<br/>
+  <br/>
+  Created by <a href="https://www.freshcake.wtf" target="_blank" rel="noopener noreferrer">Fresh Cake</a><br/>
+  <a href="https://github.com/freshcakewtf/brolingo" target="_blank" rel="noopener noreferrer">github.com/freshcakewtf/brolingo</a>
+</footer>
+
+</body>
+</html>

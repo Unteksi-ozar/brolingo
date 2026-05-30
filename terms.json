@@ -45,6 +45,19 @@
       "brolingo_tip": "True Agile practitioners can explain what a 'story point' is. No two will give the same answer."
     },
     {
+      "id": 51,
+      "term": "AI-Maxxing",
+      "pronunciation": "AY-eye MAX-ing",
+      "part_of_speech": "gerund / lifestyle disease",
+      "category": "Tech",
+      "severity": "critical",
+      "corporate_definition": "A productivity methodology wherein an individual systematically delegates cognitive and administrative functions to generative AI to maximize personal output and optimize their life-stack efficiency.",
+      "real_definition": "The practice of asking ChatGPT what to have for breakfast, then asking it whether the breakfast was emotionally meaningful. AI-Maxxers don't make decisions so much as submit prompts about decisions, review the output, and iterate. They have optimized their calendar, their relationships, their morning routine, and their personality. The optimization has not made them better. It has made them faster at being exactly who they already were.",
+      "example": "\"I asked Claude to optimize my morning routine.\" — It scheduled 22 minutes of intentional reflection. He now wakes up 45 minutes earlier and is significantly more tired than before.",
+      "also_see": ["Vibe Coding", "Data-Driven", "Innovative", "Productize"],
+      "brolingo_tip": "The logical endpoint of AI-Maxxing is prompting an AI to generate a better prompt for prompting the AI. Several people have already done this. They called it 'prompt engineering.'"
+    },
+    {
       "id": 3,
       "term": "Alignment",
       "pronunciation": "uh-LYN-ment",
@@ -253,6 +266,19 @@
       "brolingo_tip": "Every company on earth claims to be innovative. Statistically, this cannot be true."
     },
     {
+      "id": 49,
+      "term": "Key",
+      "pronunciation": "kee",
+      "part_of_speech": "adjective (promiscuous)",
+      "category": "Strategy",
+      "severity": "moderate",
+      "corporate_definition": "An intensifier applied to nouns to signal importance, urgency, or relevance without providing any evidence of any of those things.",
+      "real_definition": "A magical adjective that can be placed in front of any noun to make it sound more important than it really is. Key learnings. Key stakeholders. Key deliverables. Key outcomes. Key takeaways. The word 'key' adds no information. It is the verbal equivalent of bold text.",
+      "example": "\"What were the key learnings from our key stakeholders on the key deliverables?\" — A sentence with three keys that opens no doors.",
+      "also_see": ["Learnings", "Stakeholder", "Deliverable", "Value Add"],
+      "brolingo_tip": "Remove the word 'key' from any sentence and check if anything changes. It will not."
+    },
+    {
       "id": 17,
       "term": "Learnings",
       "pronunciation": "LUR-ningz",
@@ -407,6 +433,19 @@
       "example": "\"Feel free to reach out if you have any questions!\" — Standard email sign-off. No one will reach out. Questions will fester.",
       "also_see": ["Circle Back", "Take Offline", "Bandwidth"],
       "brolingo_tip": "You can also just say 'email me' or 'message me.' The reaching is optional."
+    },
+    {
+      "id": 50,
+      "term": "Reorg",
+      "pronunciation": "ree-ORG",
+      "part_of_speech": "noun / recurring trauma",
+      "category": "Leadership",
+      "severity": "severe",
+      "corporate_definition": "A strategic restructuring initiative designed to optimize organizational efficiency and unlock synergies across business units.",
+      "real_definition": "Something large companies do when they stop making as much money as they think they should. New boxes on the org chart. Same people, different reporting lines, fresh confusion. Doesn't usually affect most teams day-to-day other than a couple of weeks of pointless all-hands meetings and corridor speculation about who reports to whom now.",
+      "example": "\"Following the reorg, our teams are better aligned to serve customer needs.\" — Dave now reports to Sandra instead of Marcus. Customer needs are unchanged.",
+      "also_see": ["Alignment", "Stakeholder", "Pivot", "Synergy"],
+      "brolingo_tip": "The primary output of a reorg is another reorg, typically 18 months later."
     },
     {
       "id": 29,
